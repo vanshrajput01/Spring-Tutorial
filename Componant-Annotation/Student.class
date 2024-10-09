@@ -1,0 +1,14 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component()    // Add this Annoatation to Automatically config this class Bean
+public class Student {
+	
+	@Value("#{101}")
+	public Integer studId;
+	@Value("#{'name01'}")
+	public String studName;
+	
+}
