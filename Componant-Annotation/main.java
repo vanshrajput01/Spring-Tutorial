@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 // in your main class Method have @SpringBootApplication so you can not add @component-scan(),@configuration,@EnableAutoConfiguration these Annotation..
 public class Program01Application implements CommandLineRunner {
-	@Autowired  // Automatically Inject dependency  
+	@Autowired  // Automatically Inject dependency of Student class
 	private Student student;
 
 	public static void main(String[] args) {
