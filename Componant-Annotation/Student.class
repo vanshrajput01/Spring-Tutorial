@@ -5,7 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component()    // Add this Annoatation to Automatically config this class Bean
 public class Student {
-	
+	// Here you can not create Getter,Setter,Default & Parameterized constructor beacouse 
+	you can injection this class depandency in main class using @Autowired Annotaion(if you can use this @Annotation then setter Student class Property value using @value or xml file)
 	@Value("#{101}")
 	public Integer studId;
 	@Value("#{'name01'}")
